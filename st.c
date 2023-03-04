@@ -194,7 +194,6 @@ static void tsetscroll(int, int);
 static void tswapscreen(void);
 static void tsetmode(int, int, const int *, int);
 static int twrite(const char *, int, int);
-static void tfulldirt(void);
 static void tcontrolcode(uchar );
 static void tdectest(char );
 static void tdefutf8(char);
@@ -1874,8 +1873,7 @@ strhandle(void)
 	int j, narg, par;
 	const struct { int idx; char *str; } osc_table[] = {
 		{ defaultfg, "foreground" },
-		{ defaultbg, "background" },
-		{ defaultcs, "cursor" }
+		{ defaultbg, "background" }
 	};
 
 	term.esc &= ~(ESC_STR_END|ESC_STR);
