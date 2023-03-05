@@ -240,6 +240,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_L,           copyurl,        {.i =  0} },
 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
 	{ TERMMOD,              XK_Escape,      keyboard_select,{.i =  0} },
+	{ TERMMOD,              XK_O,           opencopied,     {.v = "xdg-open"} },
+
+
 };
 
 /*
